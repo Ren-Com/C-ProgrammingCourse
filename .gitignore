@@ -1,5 +1,40 @@
-"*.exe" 
-"*.out" 
-"*.obj" 
-"Debug/" 
-"Release/" 
+# Windows executables
+*.exe
+
+# Linux executables
+*.out
+*.o
+*.a
+*.so
+*.ko
+*.elf
+*.bin
+*.run
+*.app
+a.out
+
+# Object files
+*.obj
+*.o
+
+# Build directories
+Debug/
+Release/
+build/
+bin/
+obj/
+dist/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# IDE files (opsional)
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
