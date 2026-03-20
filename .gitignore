@@ -37,3 +37,11 @@ dist/
 *.swp
 *.swo
 *~
+
+# Ignore specific files
+number1
+number2
+number3
+number4
+number5
+number6
