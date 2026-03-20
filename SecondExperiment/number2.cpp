@@ -7,7 +7,7 @@ int main() {
     int numberPrevious = 2, numberCurrent = 3;
     int denominatorPrevious = 1, denominatorCurrent = 2;
     int i, userInput, nextNumber, nextDenominator;
-    double sum = 0;  // Initialize sum to 0
+    double sum = 0;
     int sign = 1;
     
     //Input
