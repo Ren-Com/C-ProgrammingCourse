@@ -4,10 +4,10 @@ using namespace std;
 int main() {
     
     //Declaration
-    int numPrev = 2, numCurr = 3;
-    int denPrev = 1, denCurr = 2;
-    int i, userInput, nextNum, nextDen;
-    double sum;
+    int numberPrevious = 2, numberCurrent = 3;
+    int denominatorPrevious = 1, denominatorCurrent = 2;
+    int i, userInput, nextNumber, nextDenominator;
+    double sum = 0;  // Initialize sum to 0
     int sign = 1;
     
     //Input
@@ -26,32 +26,26 @@ int main() {
         }
         
         if (i == 1) {
-            sum += sign * (double)numPrev / denPrev;
-            cout << "Term " << i << ": " << (sign == 1 ? "+" : "") 
-                 << numPrev << "/" << denPrev << endl;
+            sum += sign * (double)numberPrevious / denominatorPrevious;
         } 
         else if (i == 2) {
-            sum += sign * (double)numCurr / denCurr;
-            cout << "Term " << i << ": " << (sign == 1 ? "+" : "") 
-                 << numCurr << "/" << denCurr << endl;
+            sum += sign * (double)numberCurrent / denominatorCurrent;
         }
         else {
-            nextNum = numPrev + numCurr;
-            nextDen = denPrev + denCurr;
+            nextNumber = numberPrevious + numberCurrent;
+            nextDenominator = denominatorPrevious + denominatorCurrent;
             
-            sum += sign * (double)nextNum / nextDen;
-            cout << "Term " << i << ": " << (sign == 1 ? "+" : "") 
-                 << nextNum << "/" << nextDen << endl;
+            sum += sign * (double)nextNumber / nextDenominator;
             
-            numPrev = numCurr;
-            numCurr = nextNum;
-            denPrev = denCurr;
-            denCurr = nextDen;
+            numberPrevious = numberCurrent;
+            numberCurrent = nextNumber;
+            denominatorPrevious = denominatorCurrent;
+            denominatorCurrent = nextDenominator;
         }
     }
     
     //Output
-    cout << "\nTotal sum: " << sum << endl;
+    cout << "Total sum: " << sum << endl;
     
     return 0;
 }
