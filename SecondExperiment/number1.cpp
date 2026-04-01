@@ -24,6 +24,7 @@ int main()
             if (prime % i == 0)
             {
                 cout << prime << " is not a prime number";
+                break;
             }
             else
             {
