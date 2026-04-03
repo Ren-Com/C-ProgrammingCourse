@@ -5,15 +5,14 @@ using namespace std;
 bool judgePrime(int x);
 
 int main() {
-    int num;
+    int num[] = {-5,1,2,4,5,7,20,100,125};
     
-    cout << "Enter a positive integer: ";
-    cin >> num;
-    
-    if (judgePrime(num)==true) {
-        cout << num << " is a prime number" << endl;
-    } else {
-        cout << num << " is not a prime number" << endl;
+    for (int i = 0; i < 9; i++) {
+        if (judgePrime(num[i])) {
+            cout << num[i] << " is a prime number" << endl;
+        } else {
+            cout << num[i] << " is not a prime number" << endl;
+        }
     }
     
     return 0;
